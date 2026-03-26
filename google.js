@@ -1,7 +1,7 @@
 const { google } = require("googleapis");
 
 const auth = new google.auth.GoogleAuth({
-  keyFile: "credentials.json", // твій JSON ключ від Google Service Account
+  keyFile: "/etc/secrets/credentials.json", // твій JSON ключ від Google Service Account
   scopes: ["https://www.googleapis.com/auth/spreadsheets"],
 });
 
